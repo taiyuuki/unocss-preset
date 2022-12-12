@@ -1,0 +1,35 @@
+{
+  "name": "@taiyuuki/unocss-preset",
+  "version": "0.0.3",
+  "description": "opiniated unocss preset",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/taiyuuki/unocss-preset"
+  },
+  "bugs": "https://github.com/taiyuuki/unocss-preset/issues",
+  "homepage": "https://github.com/taiyuuki/unocss-preset#readme",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts ./",
+    "dev": "tsup --watch",
+    "build": "tsup",
+    "test": "vitest"
+  },
+  "keywords": [],
+  "author": "taiyuuki <taiyuuki@qq.com>",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@taiyuuki/eslint-config-ts": "^0.0.5",
+    "@types/node": "^18.11.9",
+    "esbuild": "^0.16.4",
+    "esbuild-plugin-import-glob": "^0.1.1",
+    "eslint": "^8.26.0",
+    "tsup": "^6.4.0",
+    "unocss": "^0.47.5",
+    "vitest": "^0.23.4"
+  }
+}
