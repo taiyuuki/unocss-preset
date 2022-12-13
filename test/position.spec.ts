@@ -1,4 +1,4 @@
-import { position } from '../src/presets/position'
+import position from '../src/presets/position'
 import { describe, it, expect } from 'vitest'
 import { unoTest } from './unotest'
 

@@ -1,4 +1,4 @@
-import { boxShadow } from '../src/presets/boxShadow'
+import boxShadow from '../src/presets/boxShadow'
 import { describe, it, expect } from 'vitest'
 import { unoTest } from './unotest'
 

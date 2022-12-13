@@ -3,10 +3,12 @@ import type { CSSObject, Rule } from 'unocss'
 function cssObjectify(cssObj: CSSObject) {
   let result = ''
   for (const key in cssObj) {
-    result += key
-    result += ': '
-    result += cssObj[key]
-    result += ';\n'
+    if (cssObj[key]) {
+      result += key
+      result += ': '
+      result += cssObj[key]
+      result += ';\n'
+    }
   }
   return result
 }

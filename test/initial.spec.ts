@@ -1,4 +1,4 @@
-import { initialPreset } from '../src/presets/initial'
+import initialPreset from '../src/presets/initial'
 import { describe, it, expect } from 'vitest'
 import { unoTest } from './unotest'
 

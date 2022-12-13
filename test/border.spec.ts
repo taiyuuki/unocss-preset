@@ -1,4 +1,4 @@
-import { border } from '../src/presets/border'
+import border from '../src/presets/border'
 import { describe, it, expect } from 'vitest'
 import { unoTest } from './unotest'
 

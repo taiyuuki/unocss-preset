@@ -1,4 +1,4 @@
-import { margin } from '../src/presets/margin'
+import margin from '../src/presets/margin'
 import { describe, it, expect } from 'vitest'
 import { unoTest } from './unotest'
 
