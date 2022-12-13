@@ -1,12 +1,9 @@
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment, @typescript-eslint/prefer-ts-expect-error
-// @ts-ignore
-// eslint-disable-next-line import/no-unresolved
-import presets from './presets/**/*'
+import presets from 'glob:./presets/**/*'
 import type { Preset, Rule } from 'unocss'
 
 const rules: Rule[] = []
 
-presets.forEach((preset: { default: Rule[] }) => {
+presets.forEach((preset) => {
   rules.push(...preset.default)
 })
 

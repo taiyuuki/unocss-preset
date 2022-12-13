@@ -1,5 +1,5 @@
 import { defineConfig } from 'tsup'
-import importGlobPlugin from 'esbuild-plugin-import-glob'
+import importGlobPlugin from '@taiyuuki/esbuild-plugin-import-glob'
 
 export default defineConfig({
   entry: ['src/index.ts'],
@@ -7,5 +7,5 @@ export default defineConfig({
   splitting: false,
   clean: true,
   dts: true,
-  esbuildPlugins: [importGlobPlugin.default()],
+  esbuildPlugins: [importGlobPlugin()],
 })

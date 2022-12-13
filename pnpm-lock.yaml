@@ -1,20 +1,20 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@taiyuuki/esbuild-plugin-import-glob': ^0.1.5
   '@taiyuuki/eslint-config-ts': ^0.0.5
   '@types/node': ^18.11.9
   esbuild: ^0.16.4
-  esbuild-plugin-import-glob: ^0.1.1
   eslint: ^8.26.0
   tsup: ^6.4.0
   unocss: ^0.47.5
   vitest: ^0.23.4
 
 devDependencies:
+  '@taiyuuki/esbuild-plugin-import-glob': 0.1.5
   '@taiyuuki/eslint-config-ts': 0.0.5_eslint@8.29.0
   '@types/node': 18.11.13
   esbuild: 0.16.4
-  esbuild-plugin-import-glob: 0.1.1
   eslint: 8.29.0
   tsup: 6.5.0
   unocss: 0.47.5
@@ -377,6 +377,12 @@ packages:
       '@types/estree': 1.0.0
       estree-walker: 2.0.2
       picomatch: 2.3.1
+    dev: true
+
+  /@taiyuuki/esbuild-plugin-import-glob/0.1.5:
+    resolution: {integrity: sha512-9AB/p7wBz4lvCFQeU/eK+K1vzZ+tKRNQp3Plgngx9Tv/4/nyA2sZ4HRKCGvDdf2T0U9e0h9YDApyrRL8pq05uw==}
+    dependencies:
+      fast-glob: 3.2.12
     dev: true
 
   /@taiyuuki/eslint-config-ts/0.0.5_eslint@8.29.0:
@@ -1257,12 +1263,6 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
-
-  /esbuild-plugin-import-glob/0.1.1:
-    resolution: {integrity: sha512-yAFH+9AoIcsQkODSx0KUPRv1FeJUN6Tef8vkPQMcuVkc2vXYneYKsHhOiFS/yIsg5bQ70HHtAlXVA1uTjgoJXg==}
-    dependencies:
-      fast-glob: 3.2.12
-    dev: true
 
   /esbuild-sunos-64/0.15.18:
     resolution: {integrity: sha512-On22LLFlBeLNj/YF3FT+cXcyKPEI263nflYlAhz5crxtp3yRG1Ugfr7ITyxmCmjm4vbN/dGrb/B7w7U8yJR9yw==}
