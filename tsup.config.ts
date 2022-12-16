@@ -7,5 +7,7 @@ export default defineConfig({
   splitting: false,
   clean: true,
   dts: true,
-  esbuildPlugins: [importGlobPlugin()],
+  esbuildPlugins: [importGlobPlugin({
+    prefix: 'glob'
+  })],
 })

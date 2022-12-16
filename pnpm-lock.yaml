@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@taiyuuki/esbuild-plugin-import-glob': ^0.1.5
+  '@taiyuuki/esbuild-plugin-import-glob': ^0.1.7
   '@taiyuuki/eslint-config-ts': ^0.0.5
   '@types/node': ^18.11.9
   esbuild: ^0.16.4
@@ -11,7 +11,7 @@ specifiers:
   vitest: ^0.23.4
 
 devDependencies:
-  '@taiyuuki/esbuild-plugin-import-glob': 0.1.5
+  '@taiyuuki/esbuild-plugin-import-glob': 0.1.7
   '@taiyuuki/eslint-config-ts': 0.0.5_eslint@8.29.0
   '@types/node': 18.11.13
   esbuild: 0.16.4
@@ -379,8 +379,8 @@ packages:
       picomatch: 2.3.1
     dev: true
 
-  /@taiyuuki/esbuild-plugin-import-glob/0.1.5:
-    resolution: {integrity: sha512-9AB/p7wBz4lvCFQeU/eK+K1vzZ+tKRNQp3Plgngx9Tv/4/nyA2sZ4HRKCGvDdf2T0U9e0h9YDApyrRL8pq05uw==}
+  /@taiyuuki/esbuild-plugin-import-glob/0.1.7:
+    resolution: {integrity: sha512-M5O90J4E3GtrGo91uSTcuA7j0Rg5sxkpsur68hA5MrEk/74O1j5uWclu45AA45sGzbGI4MNaEtI8PFV8+nD/ag==}
     dependencies:
       fast-glob: 3.2.12
     dev: true

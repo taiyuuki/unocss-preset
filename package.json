@@ -24,7 +24,7 @@
     "dist"
   ],
   "devDependencies": {
-    "@taiyuuki/esbuild-plugin-import-glob": "^0.1.5",
+    "@taiyuuki/esbuild-plugin-import-glob": "^0.1.7",
     "@taiyuuki/eslint-config-ts": "^0.0.5",
     "@types/node": "^18.11.9",
     "esbuild": "^0.16.4",
