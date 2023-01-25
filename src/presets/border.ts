@@ -14,8 +14,8 @@ const border: Rule[] = [
     ([, distance, unit]) => ({ 'border-width': `${distance}${unit || 'px'}` }),
   ],
   [
-    joinReg(`^${baseReg}-color-var-(${albertReg})$`),
-    ([, color]) => ({ 'border-color': `var(--${color})` }),
+    joinReg(`^${baseReg}(-color)?-var-(${albertReg})$`),
+    ([,, color]) => ({ 'border-color': `var(--${color})` }),
   ],
   [
     joinReg(`^${baseReg}-(${hexReg})$`),
@@ -25,6 +25,7 @@ const border: Rule[] = [
     joinReg(`^${baseReg}-color-(${hexReg})$`),
     ([, color]) => ({ 'border-color': color }),
   ],
+
   [
     joinReg(`^${baseReg}-width-(${numberReg})(${unitReg})$`),
     ([, distance, unit]) => ({ 'border-width': `${distance}${unit || 'px'}` }),

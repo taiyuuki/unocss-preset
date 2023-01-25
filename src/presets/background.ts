@@ -12,8 +12,8 @@ const background: Rule[] = [
   ['bg-cover', { 'background-size': 'cover' }],
   ['bg-contain', { 'background-size': 'contain' }],
   [
-    joinReg(`^bg-color-var-(${albertReg})$`),
-    ([, color]) => ({ 'background-color': `var(--${color})` }),
+    joinReg(`^bg(-color)?-var-(${albertReg})$`),
+    ([,, color]) => ({ 'background-color': `var(--${color})` }),
   ],
   [
     joinReg(`^bg-color-(${hexReg})$`),

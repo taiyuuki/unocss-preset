@@ -7,12 +7,14 @@ describe('margin', () => {
   const test2 = 'm-t-3.5em'
   const test3 = 'm-r-10'
   const test4 = 'm-t-10%'
+  const test5 = 'm-t--5%'
   it('should be output margin', () => {
     margin.forEach(item => {
       const t1 = unoTest(item, test1)
       const t2 = unoTest(item, test2)
       const t3 = unoTest(item, test3)
       const t4 = unoTest(item, test4)
+      const t5 = unoTest(item, test5)
       if (t1) {
         expect(t1).toMatchInlineSnapshot(`
           "margin-left: auto;
@@ -35,6 +37,12 @@ describe('margin', () => {
       if (t4) {
         expect(t4).toMatchInlineSnapshot(`
           "margin-top: 10%;
+          "
+        `)
+      }
+      if (t5) {
+        expect(t5).toMatchInlineSnapshot(`
+          "margin-top: -5%;
           "
         `)
       }

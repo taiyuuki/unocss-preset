@@ -1,6 +1,6 @@
 {
   "name": "@taiyuuki/unocss-preset",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "opiniated unocss preset",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -15,6 +15,7 @@
     "dev": "tsup --watch",
     "build": "tsup",
     "clean": "rimraf ./dist",
+    "release": "npm publish --registry=https://registry.npmjs.org --access=public",
     "test": "vitest"
   },
   "keywords": [],

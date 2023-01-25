@@ -9,8 +9,8 @@ const text: Rule[] = [
     ([, d, w]) => ({ 'font-size': `${d}${w || 'px'}` }),
   ],
   [
-    joinReg(`^${baseReg}-color-var-(${albertReg})$`),
-    ([, color]) => ({ color: `var(--${color})` }),
+    joinReg(`^${baseReg}(-color)?-var-(${albertReg})$`),
+    ([,, color]) => ({ color: `var(--${color})` }),
   ],
   [
     joinReg(`^${baseReg}-color-(${hexReg})$`),
